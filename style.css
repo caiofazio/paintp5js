@@ -1,0 +1,16 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}  
+  canvas {
+    display: block;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    margin: 48px;
+  }
+  .colorBlock, .thickBlock {
+   display: flex;
+   flex-direction: row;
+ }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <div class="main">
+    <script src="sketch.js"></script>
+    <div class="colorSelector">
+      <div class="colorName" style="color : red">RED</div>
+      <div class="colorBlock">
+        <input id="colorR" type="range" min="0" max="255" step="1" value="0">
+        <div class="colorValue" style = "color: red">0</div>
+      </div>  
+    </div>
+    <div class="colorSelector">
+      <div class="colorName" style="color : green">GREEN</div>
+      <div class="colorBlock">
+      
+        <input id="colorG" type="range" min="0" max="255" step="1" value="0">
+        <div class="colorValue" style = "color: green">0</div>
+      </div>
+    </div>
+    <div class="colorSelector">
+      <div class="colorName" style="color : blue">BLUE</div>
+      <div class="colorBlock" display = "flex" flex-direction = "row">
+        <input id="colorB" type="range" min="0" max="255" step="1" value="0">
+        <div class="colorValue" style=" color: blue">0</div>
+      </div>
+    </div>
+
+    <div class="thickSelector">
+      <div class="thickness" style="font-weight: bold; font-size: 16;">Tamanho do pincel:</div>
+      <div class="thickBlock" display = "flex" flex-direction = "row">
+        <input id="thickV" type="range" min="1" max="20" step="1" value="2">
+        <div class="thickValue" style=" font-weight: bold;">2</div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
