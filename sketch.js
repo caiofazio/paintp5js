@@ -48,12 +48,14 @@ function drawLine(){
   let aux = drawV.length;
   if(drawV.length == 1){
   push()
+  strokeWeight(lineProp.thicknessV)
+  stroke(lineProp.red,lineProp.green,lineProp.blue)
   line(drawV[0].x,drawV[0].y,drawV[0].x,drawV[0].y)
   pop()
   
   }else{
   push()
-  strokeWeight(20)
+  strokeWeight(lineProp.thicknessV)
   stroke(lineProp.red,lineProp.green,lineProp.blue)
   line(drawV[aux - 2].x,drawV[aux - 2].y, drawV[aux - 1].x, drawV[aux - 1].y)
   pop()
